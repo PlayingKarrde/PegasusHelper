@@ -12,7 +12,7 @@ Download the latest zip from the releases page and unzip directly into your Pega
 
 Launch commands that work with Pegasus can be used with LaunchPegasus.exe also. For example 
 
-LaunchPegasus.exe 
+LaunchPegasus.exe --portable --disable-menu-reboot --disable-menu-shutdown
 
 ## PegasusGamesLauncher
 PegasusGamesLauncher.exe is primarily intended for those that wish to manage their Steam games via LaunchBox. This allows for the curation of Steam metadata and art/videos as well as allow Pegasus to track time played for Steam games. 
