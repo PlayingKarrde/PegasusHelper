@@ -1,5 +1,6 @@
 ﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
+#SingleInstance Force
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
@@ -21,3 +22,7 @@ Gui, Color, black
 Gui -Caption
 
 Gui, Show, x0 y0 w%A_ScreenWidth% h%A_ScreenHeight%
+
+RunWait, pegasus-fe.exe
+ExitApp
+
