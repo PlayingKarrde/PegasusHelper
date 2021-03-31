@@ -23,6 +23,13 @@ Gui -Caption
 
 Gui, Show, x0 y0 w%A_ScreenWidth% h%A_ScreenHeight%
 
-RunWait, pegasus-fe.exe
+args = 
+
+for n, param in A_Args  ; For each parameter:
+{
+    args = %args% %param%
+}
+
+RunWait, pegasus-fe.exe %args%
 ExitApp
 

@@ -8,7 +8,11 @@ This is a series of compiled scripts that make the Pegasus experience on Windows
 - Optional Windows launcher to help with launching Steam games
 
 ## How to use
-Download the latest zip from the releases page and unzip directly into your Pegasus directory. Run Pegasus with the LaunchPegasus.exe
+Download the latest zip from the releases page and unzip directly into your Pegasus directory. Run Pegasus with the LaunchPegasus.exe.
+
+Launch commands that work with Pegasus can be used with LaunchPegasus.exe also. For example 
+
+LaunchPegasus.exe 
 
 ## PegasusGamesLauncher
 PegasusGamesLauncher.exe is primarily intended for those that wish to manage their Steam games via LaunchBox. This allows for the curation of Steam metadata and art/videos as well as allow Pegasus to track time played for Steam games. 
@@ -19,9 +23,12 @@ Simply set up a new emulator in LaunchBox called Steam (or whatever you like), w
 ![LaunchBox setup](https://i.imgur.com/wHjl9re.png)
 
 ## Caveats
-Currently the tool does not support Pegasus switches such as portable or kiosk modes. Portable mode can, however, be activated simply by placing an empty txt file called portable.txt in the same directory as Pegasus.
+PegasusGamesLauncher needs 10 seconds after loading in order to read the active window. Therefore if you exit the game quickly after launching, or the game takes longer than 10 seconds to load, the program won't exit correctly and will need to be force closed to restore Pegasus. This is being worked on for future versions.
 
 ## Version history
+v0.3
+- Adding support for Pegasus launch commands
+
 v0.2
 - Simplified experience so only one file is needed for the seamless experience
 - Archived older scripts method
